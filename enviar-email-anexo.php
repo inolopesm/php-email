@@ -1,11 +1,11 @@
 <?php
 
-require __DIR__ . "/vendor/autoload.php";
+require __DIR__ . "/bootstrap/app.php";
 
 use \App\Communication\Email;
 
 $address = "matheus.moovery@gmail.com";
-$subject = "Arquivo Anexo";
+$subject = "Arquivo Anexo via ENV";
 $body = "Segue arquivo de teste";
 $attachment = __DIR__ . "/anexo-teste.txt";
 

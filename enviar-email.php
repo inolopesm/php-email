@@ -1,11 +1,11 @@
 <?php
 
-require __DIR__ . "/vendor/autoload.php";
+require __DIR__ . "/bootstrap/app.php";
 
 use \App\Communication\Email;
 
 $address = "matheus.moovery@gmail.com";
-$subject = "Olá mundo :)";
+$subject = "Olá mundo com ENV :)";
 $body = "<b>Olá mundo</b><br>Parece que consegui enviar o e-mail.<br><i>Matheus da Moovery</i>";
 
 $email = new Email();
